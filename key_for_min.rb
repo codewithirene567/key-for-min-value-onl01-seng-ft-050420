@@ -5,8 +5,9 @@ def key_for_min_value(hash)
  key = nil
  value = nil
  hash.each do |name, age|
-if age < lowest_age
-  
+if value == nil
+  key = name
+  value = age
     
     end
   lowest_age
