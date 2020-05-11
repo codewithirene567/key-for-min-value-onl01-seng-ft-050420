@@ -5,12 +5,11 @@ def key_for_min_value(hash)
  key = nil
  value = nil
  hash.each do |name, age|
-if value == nil ||
+if value == nil || age < value
   key = name
   value = age 
-    
     end
-  lowest_age
+ end 
+  value
 end
- end
  
